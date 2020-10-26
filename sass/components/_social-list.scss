@@ -1,0 +1,28 @@
+.social-list{
+    display: flex;
+   
+    &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+        & svg {
+        width: 20px;
+        height: 20px;
+        }
+        &:hover svg,
+        &:focus svg {
+        fill: $secondary-title-color;
+        }
+        &:hover,
+        &:focus {
+        background-color: $accent-color;
+        } 
+    }
+    
+    &-item:not(:last-child) {
+        margin-right: 10px;
+    }
+}

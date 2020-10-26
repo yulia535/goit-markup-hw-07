@@ -1,0 +1,128 @@
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    border: 1px solid #ECECEC;
+}
+.navigation {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    & :not(:last-child) {
+        margin-right: 93px;
+    }
+}
+
+
+.logo {
+    font-family: $secondary-font;
+    color: $primary-title-color;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    &-accent {
+        color: $accent-color;
+    }
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: end;
+
+    &-title:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-title-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+}
+
+.nav-list .link.active {
+    color: $accent-color;
+  }
+.active {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: $accent-color;
+        border-radius: 2px;
+        position: absolute;
+        bottom: -1px;
+      }
+  }
+
+  
+  address {
+    font-style: normal;
+  }
+
+  .address-list-header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    & li:not(:first-child) {
+        margin-left: 50px;
+    }
+  }
+  
+
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $primary-text-color;
+}
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: $primary-text-color;
+}
+
+.address-link-header {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    vertical-align: middle;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    &:hover svg,
+    &:focus svg {
+        fill: $accent-color;
+    }
+  }
+  

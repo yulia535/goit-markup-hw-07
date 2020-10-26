@@ -1,0 +1,59 @@
+
+/* ========team section========*/
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $background-color;
+
+    &-title {
+        @include font-title;
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+            &img {
+                display: block;
+                margin-bottom: 30px; 
+            }
+            &>li {
+                width: 270px;
+                background-color: $secondary-title-color;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                border-radius: 0px 0px 4px 4px;
+                padding-bottom: 30px;
+            }
+    }
+}
+
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-title-color;
+    margin-bottom: 10px;
+}
+.position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    margin-bottom: 16px;
+}
+.gray-list {
+    width: 206px;
+    margin: auto;
+    & svg {
+        fill: $color-icon;
+    }
+    & a {
+        background-color:  $secondary-title-color;
+    }
+
+}
+
+
+

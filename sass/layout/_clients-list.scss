@@ -1,0 +1,61 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    &-title {
+    @include font-title;
+    }
+    &-list {
+    display: flex;
+    justify-content: space-between;
+        & svg {
+        fill: $color-icon;
+        }
+        
+    }
+    
+}
+
+.clients-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border-radius: 4px;
+    border: 1px solid $color-icon;
+        &:hover,
+        &:focus {
+        border-color: $accent-color;
+        }
+        &:hover svg,
+        &:focus svg {
+        fill: $accent-color;
+        }
+        
+    }
+
+.icon-logo-1 {
+    height: 49.22px;
+    width: 44.26px;
+}
+.icon-logo-2 {
+    height: 40px;
+    width: 52px;
+}
+.icon-logo-3 {
+    height: 42.60px;
+    width: 41px;
+}
+.icon-logo-4 {
+    height: 42.02px;
+    width: 79.65px;
+}
+.icon-logo-5 {
+    height: 47px;
+    width: 59px;
+}
+.icon-logo-6 {
+    height: 45.44px;
+    width: 88.48px;
+}
